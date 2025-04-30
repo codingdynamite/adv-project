@@ -1,3 +1,5 @@
+//* INTEGRATION USING EMAIL JS *//
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading')
@@ -19,4 +21,14 @@ function contact(event) {
                 'The email service is temporarily unavailable. Please contact me at email@email.com'
             );
         })
+}
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove('modal--open');
+    }
+    isModalOpen = true;
+    document.body.classList += ' modal--open';
 }
