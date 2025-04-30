@@ -611,3 +611,67 @@ footer {
 .footer__copyright {
   color: white;
 }
+
+/* 
+
+  SHAPES
+
+  shapes on the 1st ROW
+  height = 15vh
+
+  shapes on the 2nd ROW
+  height = 50vh
+
+  shapes on the 3rd ROW
+  height = 80vh
+
+  shapes on the 1st COLUMN
+  width = 5vw 
+  
+  shapes on the 2nd COLUMN
+  width = 50vw
+  
+  shapes on the 3rd COLUMN
+  width = 80vw
+
+*/
+
+.shape {
+  position: fixed;
+}
+.shape--0 {
+  top: 15vh;
+  left: 5vw;
+}
+.shape--1 {
+  top: 15vh;
+  left: 50vw;
+}
+.shape--2 {
+  top: 15vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 50vh;
+  left: 50vw;
+}
+.shape--5 {
+  top: 50vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 80vh;
+  left: 50vw;
+}
+.shape--8 {
+  top: 80vh;
+  left: 80vw;
+}
