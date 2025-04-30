@@ -12,9 +12,6 @@ function toggleContrast() {
     }
 }
 
-
-
-
 //* INTEGRATION USING EMAIL JS *//
 
 function contact(event) {
