@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
@@ -612,26 +616,51 @@ footer {
   color: white;
 }
 
-/* 
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
-  SHAPES
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .header__para {
+    font-size: 20px;
+  }
+  .modal {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    transform: none;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+  .modal__half {
+    width: 100%;
+  }
+}
 
-  shapes on the 1st ROW
-  height = 15vh
+/* SMALL PHONES */
 
-  shapes on the 2nd ROW
-  height = 50vh
-
-  shapes on the 3rd ROW
-  height = 80vh
-
-  shapes on the 1st COLUMN
-  width = 5vw 
-  
-  shapes on the 2nd COLUMN
-  width = 50vw
-  
-  shapes on the 3rd COLUMN
-  width = 80vw
-
-*/
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+}
